@@ -1,0 +1,117 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    height: 100%;
+background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainlogn{
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background: linear-gradient(black,#333);
+width:30%;
+margin-top: 7%;
+height: 420px;
+padding: 20px;
+border-radius: 30px;
+}
+
+
+form{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+form .input-box{
+    margin-top: 9%;
+    display: flex;
+    flex-direction: column;
+}
+form {
+    text-decoration: none;
+    color: white;
+}
+.input-box input{
+    width:300px;
+    cursor: pointer;
+    height: 39px;
+    border-radius: 20px;
+    border: none;
+ margin-top: 20px;
+    padding: 12px;
+}
+.input-box input:focus{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+.remeber{
+    display: flex;
+    height: 40px;
+    margin-top: 30px;
+    width: 350px;
+padding: 10px;
+
+    justify-content: space-between;
+    align-items: center;
+}
+.check{
+    display: flex;
+    flex-direction: row;
+}
+.check input{
+    margin-right: 10px;
+}
+.btn-box{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px;
+flex-direction: column;
+}
+.btn-box button{
+    width: 300px;
+    height: 39px;
+    border: none;
+cursor: pointer;
+
+    padding: 10px;
+    border-radius: 20px;
+}
+.btn-box button:hover{
+ border: 1px solid white;
+    transition: 0.5s;
+    background-color: black;
+    color: white;
+}
+.btn-box span{
+    margin-top: 20px;
+}
+form a{
+    text-decoration: none;
+    color: white;
+}
+
+form a:hover{
+    text-decoration: underline;
+    transition: 0.5s;
+
+}
+.remeber input:checked{
+    background-color: black;
+    color: white;
+}
+

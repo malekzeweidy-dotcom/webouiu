@@ -1,0 +1,464 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    background-color: darkgray;
+z-index: -1;
+    height: 100vh;
+width: 100%;
+overflow-x: hidden;
+
+}
+
+i:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    color:darkgray ;
+}
+a img{
+    width: 250px;
+    height: 340px;
+}
+.intro{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+    z-index: 1001;
+    overflow: hidden;
+    height: 100%;
+    position:fixed;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    color: white;
+background-color: black;
+}
+
+.btn{
+    width: 150px;
+    height: 45px;
+    border-radius: 23px;
+    border: none;
+    font-weight: 600;
+    background-color: white;
+color: black;
+margin-top: 30px;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+border: 1px solid white ;
+}
+.btn i {
+    margin-left: 20px;
+}
+
+
+.btn.active{
+
+}
+.intro.active{
+    position: absolute;
+    top: -170px;
+    transition: 0.9s;
+    transform: translateY(-150%);
+
+}
+
+
+.header1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    width: 100%;
+    background-color:white;
+    position: fixed;
+    padding: 30px;
+    right: 0;
+    top: 0;
+height: 100px;
+}
+
+.header1 ul li{
+    display: inline-block;
+    list-style: none;
+padding: 4px;   
+}
+.header1 ul li a{
+    text-decoration: none;
+    color: black;
+cursor: pointer;
+}
+
+.header1 .logo{
+    text-align: center;
+    margin-right: 150px;
+    font-size: 20;
+}
+
+.header1 .icons{
+    padding: 10px;
+}
+.header1 .icons i{
+    margin-left: 15px;
+    cursor: pointer;
+}
+.header2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 50px;
+    width: 100%;
+    margin-top: 7%;
+    background-color: black;
+}
+
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color:darkgray;
+}
+body.active{
+    background-color:black;
+color: white;
+}
+.home-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+.container{
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+    background-color:darkgray;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.div1 a{
+    text-decoration:none ;
+    color: black;
+}
+.div1{
+ font-weight: 600;
+ font-size: 19px;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 250px;
+    margin-top: 20px;
+}
+.div1 span{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.price{
+display: flex;
+}
+.price p {
+    margin-left: 14px;
+}
+
+.p2{
+    color: #4b4b4b;
+    text-decoration: line-through;
+}
+.div1 h4{
+    background-color: red;
+    width: 70px;
+    position: absolute;
+    color: white;
+    height: 30px;
+    border-radius: 30px;
+    padding: 7px;
+    text-align: center;
+    top: 305px;
+    left: 30px;
+}
+
+.div1 img:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+
+.i{
+    display: none;
+}
+
+.header1 ul.active{
+    left: 20px;
+    
+}
+.container.active{
+    background-color: black;
+    color: white;
+    transition: 0.6s;
+}
+
+.div1:hover >:not(:hover){
+    filter: blur(10px);
+    transition: 0.5s;
+}
+
+
+
+@media(max-width:560px){
+
+.intro{
+    position: absolute;
+    bottom: 10px;
+    height: 100vh;
+}
+
+.i{
+margin-right: 80px;
+    display: block;
+}
+
+.header1{
+margin-bottom: 10%;
+    position: fixed;
+    padding: 20px;
+}
+.header1 ul {
+    position: absolute;
+display: flex;
+flex-direction: column;
+background-color:rgb(112, 112, 112);
+height: 300px;
+width: 200px;
+padding: 30px;
+color: white;
+
+left: -200px;
+z-index: 1000;
+top: 70px;    
+}
+.header1 ul li a{
+    color: white;
+
+
+}
+.header1 h3{
+    font-size: 17px;
+}
+.header1 ul button{
+margin-top: 50%;
+width: 120px;
+height: 45px;
+background-color: black;
+color: white;
+border: none;
+border-radius: 30px;
+cursor: pointer;
+}
+.header2{
+    margin-top: 40%;
+}
+.icons{
+    margin-right: 20px;
+}
+
+.container{
+    margin-top:-110px;
+    gap: 20px;
+height: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.div1{
+    font-size: 18px;
+    height: 300px;
+    width: 180px;
+}
+.price {
+    display: flex;
+}
+.p2{
+    display: flex;
+}
+.div1 h4{
+    top: 240px;
+}
+}
+
+
+
+
+
+
+
+
+
+.mainlogn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: re;
+background: linear-gradient(black,#333);
+    right: 480px;
+width:30%;
+height: 420px;
+padding: 20px;
+position: absolute;
+border-radius: 30px;
+top:90px;
+opacity: 0;    
+z-index: 1000;
+}
+.mainlogn.active{
+    opacity: 1;
+    transition: 0.5s;
+}
+.main.active{
+    filter: blur(10px);
+}
+
+
+form{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+form .input-box{
+    margin-top: 9%;
+    display: flex;
+    flex-direction: column;
+}
+form {
+    text-decoration: none;
+    color: white;
+}
+.input-box input{
+    width:300px;
+    cursor: pointer;
+    height: 39px;
+    border-radius: 20px;
+    border: none;
+ margin-top: 20px;
+    padding: 12px;
+}
+.input-box input:focus{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+.remeber{
+    display: flex;
+    height: 40px;
+    margin-top: 30px;
+    width: 350px;
+padding: 10px;
+
+    justify-content: space-between;
+    align-items: center;
+}
+.check{
+    display: flex;
+    flex-direction: row;
+}
+.check input{
+    margin-right: 10px;
+}
+.btn-box{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px;
+flex-direction: column;
+}
+.btn-box button{
+    width: 300px;
+    height: 39px;
+    border: none;
+cursor: pointer;
+
+    padding: 10px;
+    border-radius: 20px;
+}
+.btn-box button:hover{
+ border: 1px solid white;
+    transition: 0.5s;
+    background-color: black;
+    color: white;
+}
+.btn-box span{
+    margin-top: 20px;
+}
+form a{
+    text-decoration: none;
+    color: white;
+}
+
+form a:hover{
+    text-decoration: underline;
+    transition: 0.5s;
+
+}
+.remeber input:checked{
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+/* pre loaddr effect*/
+#preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    transition:  0.5s ease ;
+}
+.loader{
+    width: 50px;
+    height: 50px;
+    border: 5px solid #333;
+    border-top: 5ps solid #fff;
+    border-radius: 50%;
+    animation: spin infinite linear 5s;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* كلاس خنضيفه في جافا سكريب*/
+.fade-out{
+    opacity: 0;
+    pointer-events: none;
+}
