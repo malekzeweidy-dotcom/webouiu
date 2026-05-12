@@ -13,6 +13,31 @@ overflow-x: hidden;
 
 }
 
+.box-images{
+display: flex;
+flex-direction: column;
+overflow-y:hidden ;
+height: 500px;
+width: 300px;
+margin-left: 40px;
+}
+.imagesss {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+height: 100%;
+width: 100%;
+overflow-x: scroll;
+}
+ img{
+    width: 100px;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+
+
 i:hover{
     transform: scale(1.1);
     transition: 0.5s;
@@ -178,8 +203,9 @@ width: 80px;
 text-align: left;
 
     background-color: darkgray;
-    position: fixed;
-right: 20px;
+position: absolute;
+    right: 20px;
+
     height: 80%;
  margin-bottom: 30px;
     padding: 20px;
@@ -247,6 +273,39 @@ form p {
 
 @media(max-width:560px){
 
+
+.home-text {
+background-color: black;
+    height: 100vh;
+}
+
+    .home{
+        background-color: black;
+        height: 110vh;
+    }
+    .left{
+
+        margin-top: 300%;
+    }
+
+    .left form{
+         color: white;
+    }
+
+    .box-images{
+        overflow-y: hidden;
+        padding: 30px;
+        width: 450px;
+margin-left: 5px;
+    }
+    .imagesss {
+        overflow-y: hidden;
+        width: 300px;
+        margin-left: 10px;
+    }
+    .imagesss img{
+        height: 450px;
+    }
 .intro{
     position: absolute;
     bottom: 10px;
@@ -324,6 +383,9 @@ height: 100%;
 }
 .div1 h4{
     top: 240px;
+}
+.header2 {
+    margin-top: 40px;
 }
 }
 
